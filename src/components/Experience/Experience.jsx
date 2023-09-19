@@ -1,19 +1,21 @@
 import React from "react";
-import "./Education.css";
+import "./Experience.css";
 
-const Education = ({ education }) => {
+const Experience = ({ experience }) => {
 
 return (
 <div>
   <div className="card"> 
-    <h2>Education</h2>
-    {education.map((item) => {
+    <h2>Experience</h2>
+    {experience.map((item) => {
 
     return (
       <div key={JSON.stringify(item)}>
         <p className="name">📕 {item.name}</p>
-        <p>{item.where}</p>
         <p>{item.date}</p>
+        <p>{item.where}</p>
+        <p>{item.description}</p>
+
       </div>
     );
     })}
@@ -22,4 +24,4 @@ return (
 );
 };
 
-export default Education;
+export default Experience;
