@@ -11,8 +11,7 @@ const Hero = ({ hero }) => {
         <p>🗺{hero.city} </p>
         <p>🗓{hero.birthDate}</p>
   <p>📧<a href={"mailto:" + hero.email}>orcv01@gmail.com</a></p>
-        <p>📱 {hero.phone}</p>
-        <p>💾<a href={hero.gitHub}>GitHub</a></p>
+        <p>💾<a href={hero.gitHub}>GitHub orcv01</a></p>
       </div>
     </div>
   );

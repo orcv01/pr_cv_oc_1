@@ -8,8 +8,8 @@ return (
   <div className="card"> 
    <h2>Languages</h2>
       <p>{languages.language}</p>
-      <p>{languages.wrlevel}</p>
-      <p>{languages.splevel}</p>
+      <p>Escrito {languages.wrlevel}</p>
+      <p>Hablado {languages.splevel}</p>
     <ul>
       <h2>Habilities</h2>
         {habilities.map((hability) => (

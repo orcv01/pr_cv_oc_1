@@ -19,12 +19,14 @@ function App() {
       <div className="App">
         <Hero hero={hero} />
         <About hero={hero} />
-        
+        <div className="botones">
         <button onClick={() => setShowEducation(true)}>Education</button>
         <button onClick={() => setShowEducation(false)}>Experience</button>
+        </div>
+        <div>
         {showEducation ? (<Education education={education}/>) : 
         (<Experience experience={experience} />)}
-        
+        </div>
         <More languages={languages} habilities={habilities} volunteer={volunteer}/>
       </div>
   </>
